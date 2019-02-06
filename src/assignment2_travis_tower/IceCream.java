@@ -9,6 +9,19 @@ package assignment2_travis_tower;
  *
  * @author flipp
  */
-public class IceCream {
+public class IceCream extends DessertItem{
+    
+    protected int cost;
+    
+    public IceCream(String n, int c)
+    {
+        name = n;
+        cost = c;
+    }
+    
+    public int getCost()
+    {
+        return cost;
+    }
     
 }

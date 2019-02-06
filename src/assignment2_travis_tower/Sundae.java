@@ -9,6 +9,24 @@ package assignment2_travis_tower;
  *
  * @author flipp
  */
-public class Sundae {
+public class Sundae extends IceCream {
     
+    private String toppingName;
+    private int toppingCost;
+    
+    public Sundae(String n, int c, String tn, int tc){
+        super(n,c);
+        toppingName = tn;
+        toppingCost = tc;
+    }
+    
+    public String getToppingName()
+    {
+        return toppingName;
+    }
+    
+    public int getToppingCost()
+    {
+        return toppingCost;
+    }
 }
